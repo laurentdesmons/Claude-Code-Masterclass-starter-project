@@ -4,7 +4,21 @@
       "Bash(git init:*)",
       "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project branch -m main)",
       "Bash(git switch:*)",
-      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project switch -c feature-abc)"
+      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project switch -c feature-abc)",
+      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project commit -m \"$\\(cat <<'EOF'\n✨ feat: add Avatar component with initials and PascalCase support\n\nProvides a reusable Avatar UI component that extracts initials from a\nname prop, using 2 uppercase letters for PascalCased names. Includes\nTDD tests and preview page integration. Also adds the /component slash\ncommand to standardize future component creation with TDD workflow.\nEOF\n\\)\")"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | { read fp; [[ \"$fp\" =~ \\.tsx?$ ]] && npx prettier --write \"$fp\"; }"
+          }
+        ]
+      }
     ]
   }
 }
