@@ -8,7 +8,9 @@
       "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project commit -m \"$\\(cat <<'EOF'\n✨ feat: add Avatar component with initials and PascalCase support\n\nProvides a reusable Avatar UI component that extracts initials from a\nname prop, using 2 uppercase letters for PascalCased names. Includes\nTDD tests and preview page integration. Also adds the /component slash\ncommand to standardize future component creation with TDD workflow.\nEOF\n\\)\")",
       "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project commit -m \"$\\(cat <<'EOF'\n🎨 style: update copy and semantic markup on public pages\n\nSharpens the splash page tagline and corrects the login heading\nhierarchy to h1 for better semantics. Also wires up a Prettier\nhook to auto-format TSX files on save.\nEOF\n\\)\")",
       "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project status)",
-      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project add .)"
+      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project add .)",
+      "Skill(commit-message)",
+      "Bash(git -C /Users/laurentdesmons/Documents/Personal/Certifications/ClaudeMasterClass/Claude-Code-Masterclass-starter-project commit -m \"$\\(cat <<'EOF'\n✨ feat: add spec slash command and spec template\n\nIntroduces a /spec command to quickly scaffold feature spec files\nand branches from a short description, and a reusable template to\nkeep specs consistently structured.\nEOF\n\\)\")"
     ]
   },
   "hooks": {
